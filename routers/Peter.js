@@ -11,16 +11,16 @@ router.use(function timeLog(req, res, next) {
 
 router.get('/', function(req, res) {
   res.send(
-    'peter\'s home page'+'<br>'+
-    '<a href="/user/peter/about"> about </a>'+'<br>'+
-    '<a href="/user/peter/classA.html"> classA </a>'
+    'Peter\'s home page'+'<br>'+
+    '<a href="/user/Peter/about"> about </a>'+'<br>'+
+    '<a href="/user/Peter/classA.html"> classA </a>'
     );
 });
 
 // define the about route
 router.get('/about', function(req, res) {
   res.send(
-    '<h1> About peter </h1>'+
+    '<h1> About Peter </h1>'+
     '\n <img src="https://www.omgtw.com/upload/article/original/be134fac90625546754962aeef34925c.jpg" height="60%">'
     );
 });
